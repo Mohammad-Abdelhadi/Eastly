@@ -1,0 +1,1149 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&family=Open+Sans&family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: ; */
+  font-family: "Cairo", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Root */
+:root {
+  --primary-color: #73509f;
+  --secondary-color: #ffbe41;
+  --white-color: white;
+  --black-color: black;
+  --font-size: 16px;
+}
+body {
+  background-color: #fafafa;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+}
+.background_Hero {
+  background: rgb(136, 69, 235);
+  background: linear-gradient(
+    90deg,
+    rgba(136, 69, 235, 1) 0%,
+    rgba(215, 68, 97, 1) 82%,
+    rgba(255, 68, 26, 1) 100%
+  );
+  height: auto;
+  padding-bottom: 30px;
+}
+.hero_section {
+  width: 80%;
+  margin: auto;
+}
+
+/* ======== header ======== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 0 48px;
+}
+ul li {
+  color: var(--white-color);
+  display: inline-block;
+}
+i #menu_humburger {
+  display: none;
+}
+
+.menu-icon {
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 0px;
+  display: none;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: #a640ff;
+}
+
+/* ======== End header ======== */
+
+/* ======== Hero Jumbtron ======== */
+
+.hero_jumbtron {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero_texts {
+  color: var(--white-color);
+}
+
+.hero_texts h1 {
+  max-width: 70%;
+  font-size: 5vw;
+}
+.hero_texts .p_text {
+  max-width: 70%;
+  font-weight: 300;
+}
+
+/* Animation Hero  */
+
+.dropping-texts {
+  display: inline-block;
+  width: 180px;
+  text-align: left;
+  height: 36px;
+  vertical-align: -2px;
+  color: #ffbe41;
+}
+
+.dropping-texts > div {
+  font-size: 0px;
+  opacity: 0;
+  margin-left: -30px;
+  position: absolute;
+  top: 213px;
+  font-weight: 900 !important;
+}
+
+.dropping-texts > div:nth-child(1) {
+  animation: roll 5s linear infinite 0s;
+}
+.dropping-texts > div:nth-child(2) {
+  animation: roll 5s linear infinite 1s;
+}
+.dropping-texts > div:nth-child(3) {
+  animation: roll 5s linear infinite 2s;
+}
+.dropping-texts > div:nth-child(4) {
+  animation: roll2 5s linear infinite 3s;
+}
+
+@keyframes roll {
+  0% {
+    font-size: 0px;
+    opacity: 0;
+    margin-left: -30px;
+    margin-top: 0px;
+    transform: rotate(-25deg);
+  }
+  3% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  5% {
+    font-size: inherit;
+    opacity: 1;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  20% {
+    font-size: inherit;
+    opacity: 1;
+    margin-left: 0px;
+    margin-top: 0px;
+    transform: rotate(0deg);
+  }
+  27% {
+    font-size: 0px;
+    opacity: 0.5;
+    margin-left: 20px;
+    margin-top: 100px;
+  }
+  100% {
+    font-size: 0px;
+    opacity: 0;
+    margin-left: -30px;
+    margin-top: 0px;
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes roll2 {
+  0% {
+    font-size: 0px;
+    opacity: 0;
+    margin-left: -30px;
+    margin-top: 0px;
+    transform: rotate(-25deg);
+  }
+  3% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  5% {
+    font-size: inherit;
+    opacity: 1;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  30% {
+    font-size: inherit;
+    opacity: 1;
+    margin-left: 0px;
+    margin-top: 0px;
+    transform: rotate(0deg);
+  }
+  37% {
+    font-size: 1500px;
+    opacity: 0;
+    margin-left: -1000px;
+    margin-top: -800px;
+  }
+  100% {
+    font-size: 0px;
+    opacity: 0;
+    margin-left: -30px;
+    margin-top: 0px;
+    transform: rotate(15deg);
+  }
+}
+
+/* ======== End Hero Jumbtron ======== */
+
+/* ======== End Animation ======== */
+
+.hero_buttons {
+  display: flex;
+  gap: 0 52px;
+  margin-top: 53px;
+}
+.hero_image {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.hero_image img {
+  max-width: 124%;
+  height: auto;
+}
+
+.hero_watch_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero_companies {
+  height: 100px;
+  background-color: red;
+  position: absolute;
+}
+
+/*  ======== end hero */
+/* ======== Start square_Started */
+.square_Started {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: 380px;
+  margin: auto;
+  border-radius: 40px;
+  box-shadow: 0px 0px 67px 6px rgba(137, 69, 236, 0.17);
+  background: linear-gradient(
+    320.28deg,
+    #8945ec 4.54%,
+    rgba(137, 69, 236, 0.5) 113.11%
+  );
+
+  border: 15px solid white;
+}
+
+.square_purple {
+  border-radius: 15px;
+  width: auto;
+  height: 443px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px 0;
+  color: white;
+}
+
+.square_purple p {
+  max-width: 380px;
+  text-align: center;
+}
+
+.square_purple span {
+  color: #ffbe41;
+}
+.square_purple button {
+  margin-top: 20px;
+}
+
+/* ======== End square_Started */
+
+/* ======== Testimonials of ourbest programs  */
+/* ======== Start our_best_programes_cards */
+
+.our_best_programes_cards {
+  width: 80%;
+  position: relative;
+  margin: auto;
+}
+.our_best_programes_cards .header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0 14px;
+  color: var(--primary-color);
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.our_best_programes_cards .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 45px;
+  box-shadow: 0px 0px 67px 6px rgba(137, 69, 236, 0.17);
+  background: linear-gradient(
+    320.28deg,
+    #8945ec 4.54%,
+    rgba(137, 69, 236, 0.5) 113.11%
+  );
+  flex-wrap: wrap;
+  border: 15px solid white;
+  height: 236px;
+}
+
+.our_best_programes_cards .cards .card {
+  text-align: center;
+  max-width: 200px;
+  height: 150px;
+  flex-grow: 1;
+  margin-left: 50px;
+  color: white;
+  margin: 20px;
+  position: relative;
+}
+.our_best_programes_cards .cards .card h5 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.learn_more {
+  display: none;
+}
+.our_best_programes_cards .cards .card:hover {
+  background: linear-gradient(89.88deg, #ffd66b 0.77%, #ffbe41 96.41%);
+  color: #5e2479;
+  border-top-left-radius: 30px;
+  flex-grow: 1;
+  border-top-right-radius: 30px;
+  /* position: absolute; */
+  transform: scale(1.1);
+  transform: translateY(-46%);
+  height: auto;
+  padding-top: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.card::before {
+  text-align: left;
+  content: "Learn More>>";
+  font-weight: 600;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  top: 101%;
+  transform: translateX(-50%);
+  color: white;
+  width: 90.3%;
+  background-color: var(--secondary-color);
+  padding: 5px 10px;
+  opacity: 0;
+  color: #5e2479;
+}
+
+.card:hover::before {
+  display: inline-block;
+  height: 90px;
+  background: linear-gradient(89.88deg, #ffd66b 0.77%, #ffbe41 96.41%);
+  cursor: pointer;
+  color: #5e2479;
+  transition: 0.2s;
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
+}
+/* ======== End Out Best Programes */
+
+/* ======== Start Scroll & Slider best programes */
+
+.scroll_slider_best_programes {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  color: var(--primary-color);
+  margin: auto;
+  margin-top: 60px;
+}
+
+.header_text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.header_scroll_cards p {
+  max-width: 380px;
+}
+.scroll_cards_best_programes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 400px;
+  padding-top: 200px;
+}
+
+.scroll_card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 22px;
+  width: 359.55px;
+  height: 87px;
+  padding: 17px;
+  background: linear-gradient(
+    300.25deg,
+    rgba(137, 69, 236, 0.1) 5.78%,
+    rgba(137, 69, 236, 0) 176.24%
+  );
+  margin-bottom: 44px;
+  border-radius: 15px;
+  border: 3px solid white;
+}
+.scroll_card:hover {
+  background: linear-gradient(
+    300.25deg,
+    rgba(137, 69, 236, 0.05) 5.78%,
+    rgba(137, 69, 236, 0) 176.24%
+  );
+  border: 3px solid #ffffff;
+  box-shadow: -1px 18px 49px -24px rgba(137, 69, 236, 0.62);
+  transition: 0.3s;
+  border-radius: 15px;
+}
+
+.slider_cards {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.slider_card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 280px;
+  height: 400px;
+  background: rgba(137, 69, 236, 0.14);
+  border-radius: 1000px 1000px 60px 60px;
+  margin-left: 30px;
+}
+.slider_card h5 {
+  max-width: 150px;
+  text-align: center;
+}
+.slider_card:hover {
+  background: rgba(137, 69, 236, 0.04);
+  transition: 0.3s;
+  box-shadow: 0px 0px 51px 6px rgba(137, 69, 236, 0.24);
+}
+
+/* ======== End Scroll & Slider best programes  ======== */
+
+/* ======== Buttons */
+button {
+  background: linear-gradient(89.88deg, #ffd66b 0.77%, #ffbe41 96.41%);
+  border: 3px solid rgba(137, 69, 236, 0.37);
+  border-radius: 15px;
+  padding: 7px 20px;
+}
+
+/* ####################################################################################333 */
+/* ======== start best_programes  ======== */
+
+.best_programes {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+.main_subject {
+  display: flex;
+  flex-direction: column;
+}
+.our_best_programms {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+}
+.our_best_programms_maintxt {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 27px;
+}
+
+.our_best_programms_secondarytxt {
+  color: var(--primary-color);
+  margin: 14px 0 52px 0;
+  font-weight: 100;
+}
+.best_programmes_features {
+  display: flex;
+  gap: 10px 10px;
+  position: relative;
+  margin: 16px 0;
+  min-width: 100%;
+}
+.best_programms_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ======== start best_programes  ======== */
+
+/* ======== start features  ======== */
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 9px 10px;
+  background: linear-gradient(
+    300.25deg,
+    rgba(137, 69, 236, 0.1) 5.78%,
+    rgba(137, 69, 236, 0) 176.24%
+  );
+  border: 3px solid #ffffff;
+  border-radius: 40px;
+  width: 100%;
+  padding: 50px 10px;
+  width: 80%;
+  position: relative;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.feature:hover {
+  background: linear-gradient(
+    300.25deg,
+    rgba(137, 69, 236, 0.05) 5.78%,
+    rgba(137, 69, 236, 0) 176.24%
+  );
+  border: 3px solid #ffffff;
+  box-shadow: -1px 18px 49px -24px rgba(137, 69, 236, 0.62);
+  transition: 0.3s;
+}
+.feature img {
+  width: 60px;
+  height: 62px;
+}
+.feature_maintxt {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.feature_secondarytxt {
+  font-weight: 100;
+  color: var(--primary-color);
+}
+
+.best_programmes_slider {
+  display: flex;
+  flex-direction: column;
+  gap: 9px 10px;
+  background: linear-gradient(
+    300.25deg,
+    rgba(137, 69, 236, 0.1) 5.78%,
+    rgba(137, 69, 236, 0) 176.24%
+  );
+  border: 3px solid #ffffff;
+  border-radius: 40px;
+  width: 100%;
+  flex-grow: 1;
+
+  padding: 40px 25px;
+  /* height: 25vh; */
+  width: 80%;
+}
+
+.best_programmes_slider img {
+  width: 60px;
+  height: 62px;
+}
+.best_programmes_slider_maintxt {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.best_programmes_slider_secondarytxt {
+  font-weight: 100;
+  color: var(--primary-color);
+}
+.best_programmes_slider_freelancer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -3%;
+}
+.best_programmes_slider_freelancer p {
+  color: var(--primary-color);
+}
+.best_programmes_slider_arrows img {
+  width: 39px;
+  height: 39px;
+}
+
+.love {
+  position: absolute;
+  top: -13%;
+}
+.statics {
+  position: absolute;
+  top: -13%;
+}
+.chat {
+  position: absolute;
+  top: -9%;
+}
+ul p {
+  font-size: 14px;
+}
+
+/* ======== End features  ======== */
+
+/* ======== Start Footer ======== */
+
+footer {
+  color: #f6f7f7;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  width: 80%;
+  margin: auto;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  gap: 5%;
+}
+
+.footer-section ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  font-size: 1.2rem;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-section ul p {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.footer-section li {
+  color: #8f9090;
+  font-size: 1.1rem;
+}
+
+.footer-section li:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.footer-logo-section {
+  display: flex;
+  gap: 15%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%;
+  width: 30%;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.footer-info {
+  color: #8f9090;
+  text-align: center;
+}
+
+.footer-contact-icon {
+  display: flex;
+  gap: 10%;
+  padding-top: 10%;
+  width: 150px;
+  fill: var(--primary-color);
+}
+
+/* ======== End Footer  ======== */
+
+/* ======== Mobile devices  ========*/
+@media (max-width: 768px) {
+  .best_programes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .our_best_programms {
+    width: 100%;
+  }
+
+  .our_best_programms_secondarytxt {
+    width: 100% !important;
+    margin: 8px 0 20px 0;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  .best_programmes_features {
+    gap: 20px;
+  }
+  .footer_secondarytxt {
+    font-size: 14px;
+  }
+  .footer_maintxt {
+    font-size: 14px;
+  }
+  .feature_secondarytxt {
+    font-size: 14px;
+  }
+  .feature_maintxt {
+    font-size: 14px;
+  }
+  .feature,
+  .footer {
+    width: 100%;
+  }
+}
+
+/* ======== media query ========  */
+/* ======== Mobile devices ========  */
+@media (min-width: 320px) and (max-width: 480px) {
+  .img_best_programms img {
+    width: 55vb;
+  }
+  .our_best_programms_maintxt {
+    font-size: calc(1.3vw + 13px);
+  }
+  .footer-info {
+    font-size: 14px;
+  }
+  .footer-section li {
+    font-size: 13px !important;
+  }
+  .best_programmes_features {
+    flex-wrap: wrap;
+  }
+}
+
+/* ======== iPads, Tablets ======== */
+@media (min-width: 481px) and (max-width: 768px) {
+  .img_best_programms img {
+    width: 55vb;
+  }
+}
+
+/* ======== Small screens, laptops ========  */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .menu li{
+    display: none;
+  }
+  .img_best_programms img {
+    width: 55vb;
+  }
+  .best_programmes_features {
+    gap: 20px;
+  }
+  .best_programes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-section li {
+    color: #8f9090;
+    font-size: 13px !important;
+  }
+}
+
+/* ======== Desktops, large screens ======== */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .our_best_programms_secondarytxt {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    padding-bottom: 10%;
+  }
+
+  .footer-logo-section {
+    width: 100%;
+    gap: 20px;
+    padding-bottom: 10px;
+  }
+
+  .footer-section {
+    padding-top: 3%;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .img_best_programms img {
+    width: 45vb;
+  }
+  .hero_image {
+    width: 60%;
+  }
+  .hero_jumbtron {
+    flex-direction: column-reverse;
+  }
+  .hero_texts {
+    display: flex;
+    color: var(--white-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero_image {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero_texts h1 {
+    max-width: 90%;
+    font-size: 6.8vw;
+  }
+  .hero_texts .p_text {
+    max-width: 70%;
+    font-size: 1.8vw;
+  }
+
+  .hero_buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .hero_buttons p {
+    font-size: 3vw;
+  }
+  .hero_buttons button {
+    width: 160px;
+    height: 50px;
+  }
+  .hero_buttons img {
+    width: 60%;
+  }
+
+  header button {
+    display: none;
+  }
+  #menu_humburger {
+    display: block;
+  }
+
+  /* header */
+  .menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    background-color: #333;
+    padding: 5px;
+    text-align: center;
+    z-index: 5;
+  }
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #menu_humburger:checked ~ .menu {
+    display: block;
+  }
+
+  .dropping-texts > div:nth-child(1) {
+    display: block;
+    top: 415px;
+    left: 110px;
+  }
+  .dropping-texts > div:nth-child(2) {
+    display: block;
+    top: 415px;
+    left: 85px;
+  }
+  .dropping-texts > div:nth-child(3) {
+    display: block;
+    top: 415px;
+    left: 110px;
+  }
+  .dropping-texts > div:nth-child(4) {
+    display: block;
+    top: 415px;
+    left: 85px;
+  }
+
+  .our_best_programes_cards .cards .card {
+    margin: 40px 0;
+  }
+
+  .eating {
+    color: var(--secondary-color);
+  }
+  .dropping-texts {
+    display: none;
+  }
+  .dropping-texts > div:nth-child(1) {
+    display: none;
+  }
+
+  .dropping-texts > div:nth-child(2) {
+    display: none;
+  }
+
+  .dropping-texts > div:nth-child(3) {
+    display: none;
+  }
+
+  .dropping-texts > div:nth-child(4) {
+    display: none;
+  }
+  .our_best_programes_cards .cards {
+    height: auto;
+  }
+}
+
+/* iPads, Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .our_best_programes_cards .cards {
+    height: auto;
+  }
+  .our_best_programes_cards .cards .card {
+    margin: 36px 0;
+  }
+  .hero_image {
+    width: 60%; 
+  }
+  .hero_jumbtron {
+    display: flex;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+  .hero_texts {
+    display: flex;
+    color: var(--white-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero_image {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero_texts h1 {
+    max-width: 90%;
+    font-size: 7vw;
+  }
+  .hero_texts .p_text {
+    max-width: 70%;
+    font-size: 2vw;
+  }
+
+  header button {
+    display: none;
+  }
+  #menu_humburger {
+    display: block;
+  }
+
+  /* header */
+  .menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    /* width: 39%; */
+    background-color: #333;
+    padding: 5px;
+    text-align: center;
+    z-index: 5;
+  }
+  /*  */
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #menu_humburger:checked ~ .menu {
+    display: block;
+  }
+
+  .eating {
+    color: var(--secondary-color);
+  }
+  .dropping-texts {
+    display: none;
+  }
+  .dropping-texts > div:nth-child(1) {
+    display: none;
+  }
+
+  .dropping-texts > div:nth-child(2) {
+    display: none;
+  }
+
+  .dropping-texts > div:nth-child(3) {
+    display: none;
+  }
+
+  .dropping-texts > div:nth-child(4) {
+    display: none;
+  }
+  /* end header */
+}
+
+/* Small screens, laptops */
+@media (min-width: 769px) and (max-width: 1027px) {
+  .dropping-texts > div:nth-child(1) {
+    display: block;
+  }
+
+  header button {
+    display: none;
+  }
+  /* #menu_humburger {
+    display: block;
+  } */
+
+  /* header */
+
+  .menu-icon {
+    display: block;
+  }
+
+  .hero_section header input[type="checkbox"]:checked ~ .menu {
+    display: none;
+  }
+
+  .hero_texts h1 {
+    max-width: 90%;
+  }
+  .hero_texts .p_text {
+    max-width: 90%;
+  }
+
+  .eating {
+    color: var(--secondary-color);
+  }
+  .dropping-texts {
+    display: none;
+  }
+  .dropping-texts > div:nth-child(1) {
+    display: none;
+  }
+
+  .dropping-texts > div:nth-child(2) {
+    display: none;
+  }
+
+  .dropping-texts > div:nth-child(3) {
+    display: none;
+  }
+
+  .dropping-texts > div:nth-child(4) {
+    display: none;
+  }
+}
+
+/* Desktops, large screens */
+@media (min-width: 1028px) and (max-width: 1336px) {
+
+  .img_best_programms img {
+    width: 55vw;
+  }
+}
+
+/* Extra large screens */
+@media (min-width: 1201px) {
+  .hero_texts h1 {
+    max-width: 70%;
+  }
+  .hero_texts .p_text {
+    max-width: 70%;
+  }
+
+ 
+
+  
+}
