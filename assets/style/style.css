@@ -440,7 +440,7 @@ i #menu_humburger {
   overflow-y: scroll;
   scroll-behavior: smooth;
   height: 400px;
-  padding-top: 200px;
+  padding-top: 250px;
 }
 
 .scroll_card {
@@ -800,7 +800,7 @@ footer {
 
 /* ======== Small screens, laptops ========  */
 @media (min-width: 769px) and (max-width: 1024px) {
-  .menu li{
+  .menu li {
     display: none;
   }
   .img_best_programms img {
@@ -842,7 +842,6 @@ footer {
     padding-top: 3%;
   }
 }
-
 
 @media (min-width: 320px) and (max-width: 480px) {
   .img_best_programms img {
@@ -987,7 +986,7 @@ footer {
     margin: 36px 0;
   }
   .hero_image {
-    width: 60%; 
+    width: 60%;
   }
   .hero_jumbtron {
     display: flex;
@@ -1128,7 +1127,6 @@ footer {
 
 /* Desktops, large screens */
 @media (min-width: 1028px) and (max-width: 1336px) {
-
   .img_best_programms img {
     width: 55vw;
   }
@@ -1142,8 +1140,4 @@ footer {
   .hero_texts .p_text {
     max-width: 70%;
   }
-
- 
-
-  
 }
